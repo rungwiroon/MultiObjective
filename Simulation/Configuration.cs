@@ -2,6 +2,7 @@
 using SFML.Graphics;
 using SFML.Window;
 using static SFML.Window.Keyboard;
+using Color = SFML.Graphics.Color;
 
 namespace Game
 {

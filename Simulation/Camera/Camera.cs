@@ -1,6 +1,7 @@
 ﻿using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
+using View = SFML.Graphics.View;
 
 namespace Game.ViewTools
 {

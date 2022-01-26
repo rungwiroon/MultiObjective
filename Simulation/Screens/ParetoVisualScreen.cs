@@ -1,8 +1,7 @@
 ﻿using Game.GeneticAlgorithm;
 using SFML.Graphics;
 using SFML.System;
-using System.Collections.Generic;
-using System.Linq;
+using Color = SFML.Graphics.Color;
 
 namespace Game.Screens
 {
@@ -46,7 +45,7 @@ namespace Game.Screens
             // This could just be a sprite, but this works.
             this.fitnessGraph = new RectangleShape(new Vector2f(960, 960))
             {
-                Texture = new Texture("Graph.png"),
+                Texture = new Texture("./Resources/Graph.png"),
                 Position = new Vector2f(1400, 500)
             };
 

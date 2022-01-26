@@ -1,12 +1,13 @@
-﻿using Game.Factories;
+﻿using Game.ExtensionMethods;
+using Game.Factories;
+using Game.GeneticAlgorithm;
 using Game.Helpers;
 using Game.SFML_Text;
-using SFML.Graphics;
-using System.Collections.Generic;
-using Game.GeneticAlgorithm;
 using Game.ViewTools;
-using Game.ExtensionMethods;
+using SFML.Graphics;
 using SFML.System;
+using Color = SFML.Graphics.Color;
+using Font = SFML.Graphics.Font;
 
 namespace Game.Screens
 {
@@ -56,9 +57,10 @@ namespace Game.Screens
             Camera = new Camera(Configuration.SinglePlayer);
 
             // Create a 'FontText' which is a simple wrapper to easily draw text to the screen.
-            totalDistanceString = new FontText(new Font("font.ttf"), string.Empty, Color.Black, 3);
-            GenerationString = new FontText(new Font("font.ttf"), $"Generation: {0}", Color.Black, 3);
-            quitString = new FontText(new Font("font.ttf"), "Press 'Q' to quit.", Color.Black, 3);
+            var fontPath = "./Resources/font.ttf";
+            totalDistanceString = new FontText(new Font(fontPath), string.Empty, Color.Black, 3);
+            GenerationString = new FontText(new Font(fontPath), $"Generation: {0}", Color.Black, 3);
+            quitString = new FontText(new Font(fontPath), "Press 'Q' to quit.", Color.Black, 3);
         }
 
         /// <summary>

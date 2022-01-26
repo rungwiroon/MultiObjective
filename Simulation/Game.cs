@@ -4,9 +4,7 @@ using Game.Screens;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
-using System;
-using System.Threading.Tasks;
-using System.Windows;
+using Clipboard = System.Windows.Forms.Clipboard;
 
 namespace Game
 {

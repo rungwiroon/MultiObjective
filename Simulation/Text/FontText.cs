@@ -1,4 +1,6 @@
 ﻿using SFML.Graphics;
+using Color = SFML.Graphics.Color;
+using Font = SFML.Graphics.Font;
 
 namespace Game.SFML_Text
 {

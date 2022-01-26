@@ -3,6 +3,7 @@ using SFML.System;
 using System;
 using System.Collections.Generic;
 using Game.ExtensionMethods;
+using Color = SFML.Graphics.Color;
 
 namespace Game.Helpers
 {

@@ -1,7 +1,7 @@
 ﻿using Game.ExtensionMethods;
 using SFML.Graphics;
 using SFML.System;
-using System;
+using Color = SFML.Graphics.Color;
 
 namespace Game.Helpers
 {
